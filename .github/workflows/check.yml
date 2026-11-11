@@ -1,0 +1,9 @@
+name: check
+on: [push, pull_request]
+jobs:
+  style:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v7
+      # A cask Homebrew cannot read breaks `brew install` for everyone using the tap.
+      - run: brew style Casks/tern.rb
