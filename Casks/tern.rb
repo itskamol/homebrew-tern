@@ -25,8 +25,8 @@ cask "tern" do
 
   # Built and signed on its maintainer's Mac with a local certificate, not notarised: without
   # this, Gatekeeper refuses to open the downloaded app.
-  postflight do
-    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{appdir}/tern.app"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{appdir}/tern.app"]
   end
 
   zap trash: [
