@@ -1,9 +1,9 @@
-# Cask template: scripts/release.sh fills itskamol/tern (from Cargo.toml's repository), 0.4.1 and
-# 84f7e6a29b179555b65639e526902d8cbff76efd612ce8179d059e859527cc59 and writes the result to target/release/bundle/tern.rb. Copy that into the tap
+# Cask template: scripts/release.sh fills itskamol/tern (from Cargo.toml's repository), 0.5.0 and
+# 2d8fddd9f74bc9a6dd1f77b3e3851dd4361bf30ebb58c4b1ec29facfc4647ac8 and writes the result to target/release/bundle/tern.rb. Copy that into the tap
 # (<owner>/homebrew-tern, Casks/tern.rb); then `brew install --cask <owner>/tern/tern`.
 cask "tern" do
-  version "0.4.1"
-  sha256 "84f7e6a29b179555b65639e526902d8cbff76efd612ce8179d059e859527cc59"
+  version "0.5.0"
+  sha256 "2d8fddd9f74bc9a6dd1f77b3e3851dd4361bf30ebb58c4b1ec29facfc4647ac8"
 
   url "https://github.com/itskamol/tern/releases/download/v#{version}/tern-#{version}-macos-arm64.zip"
   name "tern"
